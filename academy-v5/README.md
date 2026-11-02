@@ -11,6 +11,15 @@ Website học tập kỹ thuật xây dựng (bản **demo độc lập**, 1 fil
 - Slide tổng hợp nguyên lý gốc và nút **In → Lưu PDF**; watermark rất mờ (4,5%) giữa trang
 - Trang đăng ký học giao diện mới; trang thanh toán mẫu; trang quản trị **DEMO**
 
+## Triển khai không cần upload ZIP: GitHub Pages
+1. Mở https://github.com/tshuynhthanhhuy1206-droid/HUTECONS/settings/pages
+2. **Build and deployment** → Source: **Deploy from a branch**.
+3. Branch: **main**, Folder: **/docs**, sau đó **Save**.
+4. Khi GitHub xuất bản thành công, trang sẽ có dạng `https://tshuynhthanhhuy1206-droid.github.io/HUTECONS/`.
+5. Thư mục `docs/` là bản dùng cho GitHub Pages, còn `academy-v5/` là bản mã nguồn được giữ riêng. Khi chỉnh sửa cần đồng bộ hai bản.
+
+> Không có xác nhận site đang online cho đến khi người quản lý bật GitHub Pages trong Settings.
+
 ## Triển khai miễn phí qua Cloudflare Pages từ GitHub
 1. Truy cập https://dash.cloudflare.com và tạo tài khoản.
 2. Workers & Pages → Create application → Pages → Connect to Git.
