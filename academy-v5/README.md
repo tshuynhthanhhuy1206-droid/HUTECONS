@@ -6,8 +6,8 @@ Website học tập kỹ thuật xây dựng (bản **demo độc lập**, 1 fil
 - 23 danh mục môn học đại cương, chuyên ngành và đồ án
 - Giao diện responsive, chữ Times New Roman, chế độ sáng/tối (lưu cục bộ)
 - Lộ trình 9 chương Sức bền Vật liệu, checklist học tập và tiến độ (lưu cục bộ)
-- Danh mục 12 hồ sơ đề thi/đáp án được phân loại bước đầu; ưu tiên ngành Xây dựng với mã STMA240121, để đề Cơ khí/Ô tô ở mục tham khảo
-- 4 dạng **bài tập mới tự biên soạn** có hình vẽ vector chính xác theo giả thiết, số biến đổi, công thức, lời giải từng bước
+- Danh mục 17 hồ sơ đề thi/đáp án được phân loại bước đầu; ưu tiên ngành Xây dựng với mã STMA240121, để đề Cơ khí/Ô tô ở mục tham khảo
+- 7 dạng **bài tập mới tự biên soạn** có hình vẽ vector chính xác theo giả thiết, số biến đổi, công thức, lời giải từng bước
 - Slide tổng hợp nguyên lý gốc và nút **In → Lưu PDF**; watermark rất mờ (4,5%) giữa trang
 - Trang đăng ký học giao diện mới; trang thanh toán mẫu; trang quản trị **DEMO**
 
@@ -34,8 +34,8 @@ Tài liệu chính thức:
 - Admin hiện chưa có xác thực/phân quyền. Nội dung admin và tiến độ trên web chỉ lưu cục bộ trong trình duyệt.
 - Không dùng bản này để nhập thông tin cá nhân hoặc giao dịch thật.
 - Các môn ngoài Sức bền vật liệu chỉ có cấu trúc danh mục, **chưa có toàn bộ giáo trình**.
-- Hồ sơ đề thi là **metadata đối chiếu**, chưa phải ngân hàng đề đầy đủ có hình gốc.
-- Bản này chưa đóng gói ảnh photorealistic từng môn (chỉ có bìa đồ họa vector tự dựng khác nhau); ảnh gốc cần bổ sung qua kho asset có quyền sử dụng.
+- 17 hồ sơ đề thi là **metadata đối chiếu**, chưa phải ngân hàng đề đầy đủ có hình gốc; các đề chưa đủ thông tin ngành/mã đề ở danh sách riêng để rà soát.
+- Bản này có **23 hình bìa vector khác nhau theo môn**. Chưa nhúng toàn bộ ảnh photorealistic đã tạo trước đó; có thể bổ sung sau bằng tệp ảnh có quyền sử dụng.
 
 ## Nguyên tắc chính xác và bản quyền
 - Học liệu tham khảo gồm slide 9 chương, bài tập, đề thi/đáp án do chủ dự án cung cấp. Những nội dung có nguồn gốc tác giả bên ngoài được dùng làm tài liệu để **biên soạn lại độc lập**, không được tự ý bỏ tên rồi tái xuất bản nguyên bản.
