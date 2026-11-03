@@ -27,6 +27,49 @@
 @media(max-width:720px){.container{padding:16px 13px 34px}.nav-wrap{padding:10px 12px}.nav-links{justify-content:flex-start;overflow:auto;flex-wrap:nowrap}.nav-links a{white-space:nowrap;font-size:13px}.brand{min-width:auto}.brand strong{font-size:18px}.brand small{font-size:10px}.hero{grid-template-columns:1fr}.hero-info{padding:30px 22px}.hero-right{min-height:160px;padding:0}.hero-right svg{height:175px;width:auto}.hero h1{font-size:34px}.hero p{font-size:17px}.layout,.two-col,.three-col,.profile-layout{grid-template-columns:1fr}.side{position:relative;top:0}.course-grid{grid-template-columns:1fr}.exam-grid,.admin-grid,.stats{grid-template-columns:1fr 1fr}.footer-in{grid-template-columns:1fr}.panel{padding:17px}.section-title{font-size:22px}.cover{height:195px}}
 @media(max-width:430px){.exam-grid,.admin-grid,.stats{grid-template-columns:1fr}.nav-actions .mini{display:none}}
 @media print{@page{size:A4;margin:15mm}body{background:white!important}.site-header,.footer,.noprint,.container>*:not(#printWrap){display:none!important}main.container{padding:0!important;margin:0!important;max-width:none}#printWrap{display:block!important;border:none!important;box-shadow:none!important;padding:0!important}#printWrap>*:not(.print-stage){display:none!important}.print-stage{border:0;padding:0;margin:0;min-height:245mm;page-break-inside:avoid}.print-stage .print-mark{opacity:.045!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+
+/* V5.2 – design refresh: varied photographic course covers and editorial cards */
+:root{--nav:#071936;--shadow:0 12px 38px rgba(15,36,67,.09);--radius:22px}
+body{background:linear-gradient(180deg,#f6f9ff 0%,var(--bg) 550px);font-size:17px}
+[data-theme=dark] body{background:#081426}
+.site-header{border-bottom:1px solid rgba(255,255,255,.13);backdrop-filter:blur(18px)}
+.nav-wrap{max-width:1480px;min-height:80px}
+.nav-links a{font-family:Arial,sans-serif;font-weight:600;font-size:13px;letter-spacing:.03px;transition:background .2s}
+.nav-links a.active{background:#ffffff22;box-shadow:inset 0 -2px 0 #ffa32c}
+.container{max-width:1480px}
+.hero{min-height:390px;border:1px solid rgba(255,255,255,.23);background:linear-gradient(93deg,rgba(4,21,50,.99) 0%,rgba(6,35,74,.96) 44%,rgba(5,29,57,.45) 100%),url('https://images.unsplash.com/photo-1743819336189-71deffe7835b?auto=format&fit=crop&w=1450&q=75') center 42%/cover;box-shadow:0 25px 62px #102a4f23}
+.hero-info{padding:60px 52px}.hero h1{max-width:790px;font-size:clamp(39px,4vw,67px);letter-spacing:-1px}.hero p{max-width:630px}
+.hero-right svg{max-height:300px;opacity:.43;filter:drop-shadow(0 12px 26px #0008)}.hero-right:before{content:'HUTECONS  ·  ENGINEERING';position:absolute;z-index:2;bottom:27px;right:29px;font:bold 11px Arial,sans-serif;letter-spacing:2.8px;color:#ffbe69;background:#061b39a9;border:1px solid #f9b75b80;padding:11px 15px;border-radius:99px}
+.eyebrow{letter-spacing:2.7px}.section-title{font-size:31px;letter-spacing:-.5px;margin-top:36px}
+.stat{border-radius:17px;box-shadow:0 4px 20px #0a29500b}.stat b{font-size:28px}
+.course-grid{gap:20px}.course-card{border-radius:21px;box-shadow:0 8px 26px #0e315319;transition:transform .27s,box-shadow .27s;isolation:isolate}.course-card:hover{transform:translateY(-7px);box-shadow:0 21px 45px #13294e2b}
+.cover{height:205px;isolation:isolate;background:linear-gradient(128deg,var(--ca),var(--cb))}
+.cover-photo{position:absolute;inset:0;background-size:cover;background-position:center;filter:saturate(1.14) contrast(1.06);transform:scale(1.01);transition:transform .5s}
+.course-card:hover .cover-photo{transform:scale(1.085)}
+.cover:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(3,12,30,.97) 0%,rgba(6,18,41,.70) 30%,rgba(5,19,42,.16) 83%),linear-gradient(95deg,var(--ca),transparent 80%);opacity:.96;z-index:1}
+.cover:after{content:"";position:absolute;top:-86px;right:-84px;width:255px;height:255px;border:1px solid #fff4;border-radius:50%;pointer-events:none;z-index:2}
+.cover .co-art{z-index:2;width:46%;right:4%;top:12%;height:73%;opacity:.52;filter:drop-shadow(0 6px 15px #020f2444)}
+.cover .co-tag{z-index:3;top:15px;left:18px;background:#ffffffef;box-shadow:0 5px 13px #07132c22}
+.cover .co-title{z-index:3;bottom:16px;left:19px;right:16px;font-size:24px;line-height:1.11;text-shadow:0 2px 12px #010c20;font-weight:700}
+.cover .co-index{position:absolute;z-index:3;top:16px;right:17px;font:700 12px Arial,sans-serif;letter-spacing:1px;background:#00152b66;border:1px solid #ffffff66;border-radius:9px;padding:5px 8px;color:#fff}
+.cover[data-course="giaitich1"]{--ca:#2b114e;--cb:#b95691}.cover[data-course="giaitich2"]{--ca:#29446d;--cb:#6981ec}.cover[data-course="giaitich3"]{--ca:#421b63;--cb:#b158a4}
+.cover[data-course="vatly1"]{--ca:#083e67;--cb:#00a3ba}.cover[data-course="vatly2"]{--ca:#101650;--cb:#6566c9}
+.cover[data-course="hoa"]{--ca:#1c3d5e;--cb:#06a593}.cover[data-course="cohoccso"]{--ca:#573314;--cb:#d48a32}
+.cover[data-course="sbvl"]{--ca:#132844;--cb:#2974a2}.cover[data-course="chckc"]{--ca:#102c54;--cb:#139aaf}
+.cover[data-course="cohocdat"]{--ca:#5b3318;--cb:#b37942}.cover[data-course="btct"]{--ca:#28394d;--cb:#c17c4a}.cover[data-course="thep"]{--ca:#26313b;--cb:#647b95}
+.cover[data-course="congtrinhbtct"]{--ca:#15344b;--cb:#2c7a91}.cover[data-course="congtrinhthep"]{--ca:#29253b;--cb:#6a729e}
+.cover[data-course="nenmong"]{--ca:#46412e;--cb:#9c7b42}.cover[data-course="thicong"]{--ca:#6b351a;--cb:#dc8e27}.cover[data-course="tochucthicong"]{--ca:#1a4950;--cb:#318e84}
+.cover[data-course^="da"]{--ca:#21385c;--cb:#6c65ad}.cover[data-course="dactthep"]{--ca:#273948;--cb:#5588ab}.cover[data-course="dathicong"]{--ca:#65411a;--cb:#c99136}
+.course-body{padding:19px 20px 20px}.course-body>b{font-size:20px;line-height:1.2;display:block;min-height:46px}.course-desc{font-size:15px;margin:8px 0 10px}
+.course-footer .btn{border-radius:9px}.side,.panel,.exam-card,.feature{box-shadow:0 6px 28px #142e4d0c}
+.panel{border-radius:21px}.problem,.solution{border-radius:20px;box-shadow:0 7px 24px #062c5111}
+.math-step{padding:13px 15px;margin:11px 0;border:1px solid var(--line);border-radius:13px;background:var(--card)}
+.math-step .math-body{margin-top:10px;font-size:18px;line-height:2;overflow-x:auto}
+.math-display{background:var(--tint);border:1px solid var(--line);border-radius:13px;padding:15px;margin:12px 0;text-align:center;overflow-x:auto}
+.math-note{font-size:14px;color:var(--soft);line-height:1.45}
+.math-step mjx-container[display="true"],.math-display mjx-container[display="true"]{margin:.5em 0!important}
+@media(max-width:720px){.hero-info{padding:38px 24px}.hero{min-height:345px}.hero-right{display:none}.cover{height:215px}.course-body>b{min-height:0}.cover .co-title{font-size:23px}}
+
 </style>
 </head>
 <body data-theme="light">
@@ -122,7 +165,20 @@ dathicong:'<path d="M21 144H252M45 139V39M45 39H205M70 39V139M45 39L72 53M205 39
 var drawing=G[id]||G.sbvl; 
 return '<svg class="co-art" viewBox="0 0 270 160" role="img" aria-label="Minh họa riêng cho môn '+esc(course?course[1]:"kỹ thuật")+'">'+frame+drawing+'</g></svg>'
 }
-function cover(course,i){var p=palette(i);return '<div class="cover" style="--ca:'+p[0]+';--cb:'+p[1]+'"><span class="co-tag">'+esc(groupName(course[2]))+'</span>'+art(i)+'<span class="co-title">'+esc(course[1])+'</span></div>'}
+var coursePhotos={
+giaitich1:"photo-1636466497217-26a8cbeaf0aa",giaitich2:"photo-1770719269462-d3c1ed7e184f",giaitich3:"photo-1758685848754-0aa566b4ddf4",
+vatly1:"photo-1532094349884-543bc11b234d",vatly2:"photo-1451187580459-43490279c0fa",hoa:"photo-1694230155228-cdde50083573",
+cohoccso:"photo-1527335988388-b40ee248d80c",sbvl:"photo-1743819336189-71deffe7835b",chckc:"photo-1527335988388-b40ee248d80c",
+cohocdat:"photo-1500534623283-312aade485b7",btct:"photo-1656755560139-ca09906de5cf",thep:"photo-1527335988388-b40ee248d80c",
+congtrinhbtct:"photo-1743819336189-71deffe7835b",congtrinhthep:"photo-1527335988388-b40ee248d80c",nenmong:"photo-1497436072909-60f362e1d4b1",
+thicong:"photo-1504307651254-35680f356dfd",tochucthicong:"photo-1503387762-592deb58ef4e",
+dactbtct:"photo-1656755560139-ca09906de5cf",dactcongtrinhbtct:"photo-1487958449943-2429e8be8625",danenmong:"photo-1500534623283-312aade485b7",
+dactthep:"photo-1486406146926-c627a92ad1ab",dactcongtrinhthep:"photo-1464938050520-ef2270bb8ce8",dathicong:"photo-1504307651254-35680f356dfd"
+};
+function getCoursePhoto(course){var id=coursePhotos[course[0]];return id?"https://images.unsplash.com/"+id+"?auto=format&fit=crop&w=900&q=78":""}
+
+function cover(course,i){var p=palette(i),photo=getCoursePhoto(course);return '<div class="cover" data-course="'+esc(course[0])+'" style="--ca:'+p[0]+';--cb:'+p[1]+'"><div class="cover-photo" role="img" aria-label="Hình minh họa môn '+esc(course[1])+'" style="background-image:url(\''+esc(photo)+'\')"></div><span class="co-tag">'+esc(groupName(course[2]))+'</span><span class="co-index">'+String(i+1).padStart(2,"0")+' / 23</span>'+art(i)+'<span class="co-title">'+esc(course[1])+'</span></div>'}
+
 function courseCard(c,i){return '<article class="course-card">'+cover(c,i)+'<div class="course-body"><b>'+esc(c[1])+'</b><div class="course-desc">'+esc(c[3])+'</div><span class="badge">'+(c[0]==="sbvl"?"Đã tổ chức 9 chương":"Đang xây dựng học liệu")+'</span><div class="course-footer"><span class="price">Xem nội dung</span><a class="btn small" href="#course/'+encodeURIComponent(c[0])+'">Chi tiết →</a></div></div></article>'}
 function header(title,sub){return '<h2 class="section-title">'+esc(title)+'</h2><p class="subtext" style="margin-top:-7px;margin-bottom:20px">'+esc(sub||"")+'</p>'}
 function home(){return '<section class="hero"><div class="hero-info"><div class="eyebrow">Học viện kỹ thuật xây dựng • Bộ môn mở đầu: Sức bền vật liệu</div><h1>TƯ DUY KỸ THUẬT<br><span>VỮNG NỀN TẢNG</span></h1><p>Từ sơ đồ tính đến lời giải từng bước. Học theo chương, kiểm tra tiến độ, luyện bài toán kỹ thuật có hình vẽ đúng nguyên lý.</p><div class="hero-actions"><a class="btn" href="#courses">Khám phá khóa học →</a><a class="btn secondary" href="#practice">Luyện bài mới</a></div></div><div class="hero-right"><svg viewBox="0 0 530 320" aria-hidden="true"><defs><linearGradient id="bld" x1="0" x2="1"><stop stop-color="#89d4ff"/><stop offset="1" stop-color="#ffae48"/></linearGradient></defs><g stroke="url(#bld)" fill="none" stroke-width="3"><path d="M45 256L242 179L433 251L241 305Z M45 256V98L241 30L433 101V251M241 30V179M45 98L241 179L433 101M45 157L241 237L433 158M108 75V281M175 52V292M310 57V278M376 81V274" /><path d="M45 199L241 275L433 199M108 75L310 143M175 52L376 126"/></g><g fill="#ffb54b"><circle cx="45" cy="98" r="5"/><circle cx="241" cy="30" r="5"/><circle cx="433" cy="101" r="5"/></g><text x="325" y="36" fill="#ffca75" font-size="21" font-family="Georgia">σ = N/A</text><text x="20" y="33" fill="#b1dcff" font-size="23" font-family="Georgia">EI · v″ = M(x)</text></svg></div></section>'+
